@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    UIViewController *firstVC = [story instantiateViewControllerWithIdentifier:@"firstVC"];
+//    self.window.rootViewController = firstVC;
+    
     return YES;
 }
 
