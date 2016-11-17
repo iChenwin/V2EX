@@ -25,6 +25,11 @@
     return self;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+//    [self.fatherVC.navigationController popViewControllerAnimated:YES];
+    [super viewWillDisappear:animated];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -56,14 +61,9 @@
     }
 }
 
--(void)back:(UIBarButtonItem *)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
--(void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.fatherVC.hidesBottomBarWhenPushed = NO;
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

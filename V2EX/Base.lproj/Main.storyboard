@@ -38,7 +38,16 @@
                             <constraint firstItem="3sl-gr-J5H" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="z4L-mw-5pb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1Te-la-yfb"/>
+                    <navigationItem key="navigationItem" id="1Te-la-yfb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="yZ3-E7-hXV">
+                            <connections>
+                                <action selector="searchAction:" destination="9pv-A4-QxB" id="jHh-ML-8MB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3sl-gr-J5H" id="FbM-6n-naI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

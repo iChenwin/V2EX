@@ -13,6 +13,7 @@
 		B01568031DD1C06E00E1F45A /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01568011DD1C06E00E1F45A /* TopicTableViewCell.xib */; };
 		B01568071DD1EF0400E1F45A /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01568051DD1EF0400E1F45A /* WebViewController.m */; };
 		B01568081DD1EF0500E1F45A /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B01568061DD1EF0400E1F45A /* WebViewController.xib */; };
+		B01F54C31DDC62B300851BA7 /* NSObject+Function.m in Sources */ = {isa = PBXBuildFile; fileRef = B01F54C21DDC62B300851BA7 /* NSObject+Function.m */; };
 		B05E06331DD6C0AC0089C227 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E062E1DD6C0AC0089C227 /* TFHpple.m */; };
 		B05E06341DD6C0AC0089C227 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E06301DD6C0AC0089C227 /* TFHppleElement.m */; };
 		B05E06351DD6C0AC0089C227 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B05E06321DD6C0AC0089C227 /* XPathQuery.m */; };
@@ -24,6 +25,11 @@
 		B0B79B1F1DB4B11F00645ED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B79B1D1DB4B11F00645ED3 /* Main.storyboard */; };
 		B0B79B211DB4B12000645ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0B79B201DB4B12000645ED3 /* Assets.xcassets */; };
 		B0B79B241DB4B12000645ED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0B79B221DB4B12000645ED3 /* LaunchScreen.storyboard */; };
+		B0EC10431DDB0D1C00381EDE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC10411DDB0D1C00381EDE /* SearchViewController.m */; };
+		B0EC10441DDB0D1C00381EDE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC10421DDB0D1C00381EDE /* SearchViewController.xib */; };
+		B0EC10491DDB246C00381EDE /* MyFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC10481DDB246C00381EDE /* MyFunc.m */; };
+		B0EC104E1DDB266A00381EDE /* TopicListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EC104C1DDB266A00381EDE /* TopicListViewController.m */; };
+		B0EC104F1DDB266A00381EDE /* TopicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0EC104D1DDB266A00381EDE /* TopicListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +41,9 @@
 		B01568041DD1EF0400E1F45A /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		B01568051DD1EF0400E1F45A /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		B01568061DD1EF0400E1F45A /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		B01F54C11DDC62B300851BA7 /* NSObject+Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Function.h"; sourceTree = "<group>"; };
+		B01F54C21DDC62B300851BA7 /* NSObject+Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Function.m"; sourceTree = "<group>"; };
+		B01F54C41DDC686100851BA7 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Macro.h; path = ../Macro.h; sourceTree = "<group>"; };
 		B05E062D1DD6C0AC0089C227 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
 		B05E062E1DD6C0AC0089C227 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
 		B05E062F1DD6C0AC0089C227 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
@@ -54,6 +63,14 @@
 		B0B79B201DB4B12000645ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0B79B231DB4B12000645ED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0B79B251DB4B12000645ED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0EC10401DDB0D1C00381EDE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		B0EC10411DDB0D1C00381EDE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		B0EC10421DDB0D1C00381EDE /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		B0EC10481DDB246C00381EDE /* MyFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFunc.m; sourceTree = "<group>"; };
+		B0EC104A1DDB247400381EDE /* MyFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFunc.h; sourceTree = "<group>"; };
+		B0EC104B1DDB266A00381EDE /* TopicListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicListViewController.h; sourceTree = "<group>"; };
+		B0EC104C1DDB266A00381EDE /* TopicListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicListViewController.m; sourceTree = "<group>"; };
+		B0EC104D1DDB266A00381EDE /* TopicListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicListViewController.xib; sourceTree = "<group>"; };
 		CC75E10A3B44A897248CC94E /* Pods-V2EX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2EX.release.xcconfig"; path = "Pods/Target Support Files/Pods-V2EX/Pods-V2EX.release.xcconfig"; sourceTree = "<group>"; };
 		F5B3C834F9AB74FA5BE7DC49 /* libPods-V2EX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-V2EX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +95,48 @@
 				CC75E10A3B44A897248CC94E /* Pods-V2EX.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B01F54C51DDC68AA00851BA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0B79B171DB4B11F00645ED3 /* FirstViewController.h */,
+				B0B79B181DB4B11F00645ED3 /* FirstViewController.m */,
+				B0B79B1A1DB4B11F00645ED3 /* SecondViewController.h */,
+				B0B79B1B1DB4B11F00645ED3 /* SecondViewController.m */,
+				B0EC10401DDB0D1C00381EDE /* SearchViewController.h */,
+				B0EC10411DDB0D1C00381EDE /* SearchViewController.m */,
+				B0EC10421DDB0D1C00381EDE /* SearchViewController.xib */,
+				B0EC104B1DDB266A00381EDE /* TopicListViewController.h */,
+				B0EC104C1DDB266A00381EDE /* TopicListViewController.m */,
+				B0EC104D1DDB266A00381EDE /* TopicListViewController.xib */,
+				B01568041DD1EF0400E1F45A /* WebViewController.h */,
+				B01568051DD1EF0400E1F45A /* WebViewController.m */,
+				B01568061DD1EF0400E1F45A /* WebViewController.xib */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B01F54C71DDC68E000851BA7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B01567FF1DD1C06E00E1F45A /* TopicTableViewCell.h */,
+				B01568001DD1C06E00E1F45A /* TopicTableViewCell.m */,
+				B01568011DD1C06E00E1F45A /* TopicTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		B01F54C81DDC692B00851BA7 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				B01F54C41DDC686100851BA7 /* Macro.h */,
+				B0EC104A1DDB247400381EDE /* MyFunc.h */,
+				B0EC10481DDB246C00381EDE /* MyFunc.m */,
+				B01F54C11DDC62B300851BA7 /* NSObject+Function.h */,
+				B01F54C21DDC62B300851BA7 /* NSObject+Function.m */,
+			);
+			name = Function;
 			sourceTree = "<group>";
 		};
 		B05E062C1DD6C0AC0089C227 /* Hpple */ = {
@@ -116,19 +175,12 @@
 			isa = PBXGroup;
 			children = (
 				B05E062C1DD6C0AC0089C227 /* Hpple */,
+				B01F54C51DDC68AA00851BA7 /* ViewController */,
+				B01F54C81DDC692B00851BA7 /* Function */,
+				B01F54C71DDC68E000851BA7 /* Cell */,
+				B0B79B1D1DB4B11F00645ED3 /* Main.storyboard */,
 				B0B79B141DB4B11F00645ED3 /* AppDelegate.h */,
 				B0B79B151DB4B11F00645ED3 /* AppDelegate.m */,
-				B0B79B171DB4B11F00645ED3 /* FirstViewController.h */,
-				B0B79B181DB4B11F00645ED3 /* FirstViewController.m */,
-				B01568041DD1EF0400E1F45A /* WebViewController.h */,
-				B01568051DD1EF0400E1F45A /* WebViewController.m */,
-				B01568061DD1EF0400E1F45A /* WebViewController.xib */,
-				B01567FF1DD1C06E00E1F45A /* TopicTableViewCell.h */,
-				B01568001DD1C06E00E1F45A /* TopicTableViewCell.m */,
-				B01568011DD1C06E00E1F45A /* TopicTableViewCell.xib */,
-				B0B79B1A1DB4B11F00645ED3 /* SecondViewController.h */,
-				B0B79B1B1DB4B11F00645ED3 /* SecondViewController.m */,
-				B0B79B1D1DB4B11F00645ED3 /* Main.storyboard */,
 				B0B79B201DB4B12000645ED3 /* Assets.xcassets */,
 				B0B79B221DB4B12000645ED3 /* LaunchScreen.storyboard */,
 				B0B79B251DB4B12000645ED3 /* Info.plist */,
@@ -222,6 +274,8 @@
 				B01568081DD1EF0500E1F45A /* WebViewController.xib in Resources */,
 				B0B79B1F1DB4B11F00645ED3 /* Main.storyboard in Resources */,
 				B01568031DD1C06E00E1F45A /* TopicTableViewCell.xib in Resources */,
+				B0EC104F1DDB266A00381EDE /* TopicListViewController.xib in Resources */,
+				B0EC10441DDB0D1C00381EDE /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +336,14 @@
 			files = (
 				B05E06341DD6C0AC0089C227 /* TFHppleElement.m in Sources */,
 				B01568021DD1C06E00E1F45A /* TopicTableViewCell.m in Sources */,
+				B0EC10431DDB0D1C00381EDE /* SearchViewController.m in Sources */,
 				B01568071DD1EF0400E1F45A /* WebViewController.m in Sources */,
 				B0B79B1C1DB4B11F00645ED3 /* SecondViewController.m in Sources */,
 				B05E06351DD6C0AC0089C227 /* XPathQuery.m in Sources */,
+				B01F54C31DDC62B300851BA7 /* NSObject+Function.m in Sources */,
+				B0EC104E1DDB266A00381EDE /* TopicListViewController.m in Sources */,
 				B05E06331DD6C0AC0089C227 /* TFHpple.m in Sources */,
+				B0EC10491DDB246C00381EDE /* MyFunc.m in Sources */,
 				B0B79B161DB4B11F00645ED3 /* AppDelegate.m in Sources */,
 				B0B79B191DB4B11F00645ED3 /* FirstViewController.m in Sources */,
 				B0B79B131DB4B11F00645ED3 /* main.m in Sources */,
