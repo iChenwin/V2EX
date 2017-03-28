@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
+@interface SearchViewController : UIViewController <UITextFieldDelegate>
 - (instancetype)initWithVC:(UIViewController *)vc;
 @end

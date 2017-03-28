@@ -24,15 +24,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.topicArr = [NSMutableArray array];
 //    NSArray *keywords = @[@"5s"] ;//]@"mbp", @"macbookpro", @"macbook pro"];
 //    self.topicArr = [[NSMutableArray alloc] initWithArray:[self topicArrInNode:@"iphone" withKeywordArr:keywords andNumberOfTopics:30]];
-    
+
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.tabBarController.tabBar.hidden = NO;
+    self.navigationController.navigationBar.hidden = NO;
     self.hidesBottomBarWhenPushed = NO;
 //    self.navigationController.navigationBar.hidden = YES;
     [self.tableView reloadData];
@@ -98,10 +99,24 @@
         dispatch_semaphore_signal(semaphore);
     }];
     
-    
-    
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     self.topicArr = [[NSMutableArray alloc] initWithArray:response];
+    
+//    dispatch_queue_t backgroundQueue = dispatch_queue_create("com.ichenwinv.v2ex", NULL);
+//    dispatch_async(backgroundQueue, ^{
+//        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//        __block NSArray *response;
+//        [manager GET:@"https://www.v2ex.com/api/topics/hot.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//            response = [[NSMutableArray alloc] initWithArray:responseObject];
+//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//            NSLog(@"Error: %@", error);
+//        }];
+//        self.topicArr = (NSMutableArray *)response;
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.tableView reloadData];
+//        });
+//    });
+    
 //    NSMutableArray *tempArr = [[NSMutableArray alloc] init];
 //    for (NSDictionary *dict in self.topicArr) {
 //        if ([dict[@"title"] rangeOfString:@"macbook" options:NSCaseInsensitiveSearch].location != NSNotFound || [dict[@"title"] rangeOfString:@"mbp" options:NSCaseInsensitiveSearch].location != NSNotFound || [dict[@"title"] rangeOfString:@"mac book" options:NSCaseInsensitiveSearch].location != NSNotFound) {

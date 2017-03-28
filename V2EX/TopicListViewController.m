@@ -39,8 +39,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.fatherVC.navigationController.navigationBar.hidden = YES;
     ASYNCQUEUE(^{
         self.topicArr = [MyFunc topicArrInNode:self.searchDict[@"nodeName"] withKeywordArr:self.searchDict[@"keywords"] andNumberOfTopics:[self.searchDict[@"count"] integerValue]];
+        if (0 == [self.topicArr count]) {
+            self.topicArr  = [NSArray arrayWithObject:[NSDictionary dictionaryWithObject:@"未找到结果" forKey:@"title"]];
+        }
         [self.tableView reloadData];
     });
 }
@@ -80,6 +84,11 @@
     cell.tag = [dict[@"topicID"] integerValue];
     UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tappedTopic:)];
     [cell addGestureRecognizer:gesture];
+    
+//    if (indexPath.row == ([self.topicArr count] - 1)) {
+//        [self.tableView setContentOffset:CGPointZero animated:YES];
+//        [self viewDidLoad];
+//    }
     
     return cell;
     

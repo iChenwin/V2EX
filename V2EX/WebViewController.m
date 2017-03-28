@@ -20,6 +20,8 @@
         self.urlStr = urlStr;
         self.fatherVC = VC;
         self.webView = [[UIWebView alloc] init];
+        UIBarButtonItem *shareBnt = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(shareAction:)];
+        self.navigationItem.rightBarButtonItem = shareBnt;
     }
     
     return self;
@@ -42,6 +44,8 @@
     [self.webView addGestureRecognizer:swipeleft];
     
     [self.webView setDataDetectorTypes:UIDataDetectorTypeLink];
+    
+    self.fatherVC.navigationController.navigationBar.hidden = NO;
 }
 
 -(void)swipeleft:(UISwipeGestureRecognizer*)gestureRecognizer  {
@@ -70,6 +74,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)shareAction:(UIBarButtonItem *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.urlStr]];
+}
+
 
 /*
 #pragma mark - Navigation

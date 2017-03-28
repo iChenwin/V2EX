@@ -27,6 +27,11 @@
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    self.fatherVC.navigationController.navigationBar.hidden = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -46,6 +51,10 @@
         self.keywords.text = dict[@"keywords"];
         self.countOfTopic.text = dict[@"count"];
     }
+    
+    self.nodeName.delegate = self;
+    self.keywords.delegate = self;
+    self.countOfTopic.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,7 +85,12 @@
     [userDefaults setObject:[[NSDictionary alloc] initWithObjectsAndKeys:self.nodeName.text, @"nodeName", self.keywords.text, @"keywords", self.countOfTopic.text, @"count", nil] forKey:@"searchDict"];
 
     TopicListViewController *topicTableVC = [[TopicListViewController alloc] initWithDict:dict VC:self];
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:topicTableVC animated:YES];
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    [textField selectAll:self];
 }
 
 /*

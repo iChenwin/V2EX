@@ -56,6 +56,6 @@
 #define USER_DEFAULT [NSUserDefaults standardUserDefaults]
 
 //11. dispatch async异步
-#define ASYNCQUEUE(block) dispatch_async(dispatch_queue_create("asyncQueue", NULL), block);
+#define ASYNCQUEUE(block) dispatch_async(dispatch_get_main_queue(), block);
 
 #endif /* Macro_h */
